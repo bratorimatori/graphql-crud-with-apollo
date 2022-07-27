@@ -1,0 +1,22 @@
+type Query {
+  dogs: [Dog]
+  breeds: [Breed]
+  users: [User]
+}
+
+type Dog {
+  id: ID!
+  name: String
+  breed: Breed
+}
+
+type Breed {
+  id: ID!
+  name: String
+}
+
+type User {
+  id: ID!
+  email: String
+  password: String
+}
